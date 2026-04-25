@@ -63,7 +63,7 @@ Uninstall the package normally: `brew uninstall <package-name>`
 Run the following commands:
 
 ```bash
-cd ~
+cd ~/brew-sync
 rm BrewFile
 brew bundle dump -f
 git add Brewfile
