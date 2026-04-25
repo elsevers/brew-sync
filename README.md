@@ -18,7 +18,7 @@ This repository houses the list of `brew` packages that Eric uses on his Mac com
 ### 1. Install brew <!-- omit from toc -->
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ### 2. Run these commands <!-- omit from toc -->
