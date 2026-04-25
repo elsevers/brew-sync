@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the path to your repository
-REPO_DIR="$HOME/dotfiles"
+REPO_DIR="$HOME/brew-sync"
 
 # Navigate to the repo or exit if it doesn't exist
 cd "$REPO_DIR" || { echo "Repository directory not found!"; exit 1; }

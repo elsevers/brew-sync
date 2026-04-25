@@ -28,7 +28,9 @@ cd ~
 gh repo clone elsevers/brew-sync
 cd brew-sync
 brew bundle install
-chmod +x brew-sync.sh
+chmod +x sync-my-brew.sh
+echo 'alias sync-my-brew="~/brew-sync/sync-my-brew.sh"' >> ~/.zshrc
+source ~/.zshrc
 ```
 
 ## Maintenance Instructions
@@ -36,7 +38,7 @@ chmod +x brew-sync.sh
 Run this script periodically (weekly is recommended):
 
 ```bash
-brew-sync
+sync-my-brew
 ```
 
 This will:
@@ -47,7 +49,7 @@ This will:
 
 ## Package Removal Instructions
 
-Removing a package from all Macs in the sync chain requires deliberate effort to prevent `brew-sync.sh` from reinstalling them. To remove packages, do the following:
+Removing a package from all Macs in the sync chain requires deliberate effort to prevent `sync-my-brew.sh` from reinstalling them. To remove packages, do the following:
 
 ### 1. On Mac A (The Origin) <!-- omit from toc -->
 
